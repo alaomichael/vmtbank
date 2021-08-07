@@ -20,15 +20,6 @@ app.enable('trust proxy');
 //import authentication controllers
 const auth = require('./routes/userRoute');
 
-//import event controllers
-const event = require('./routes/eventRoute');
-
-//import auction controllers
-const auction = require('./routes/auctionRoute');
-
-//import vendor controllers
-const vendor = require('./routes/vendorRoute');
-
 //set security Http headers
 app.use(helmet());
 
@@ -60,9 +51,6 @@ app.use(express.urlencoded({ extended: true }));
 
 //routes middlewares
 app.use('/api/v1/users', auth);
-app.use('/api/v1/events', event);
-app.use('/api/v1/auctions', auction);
-app.use('/api/v1/vendors', vendor);
 
 app.all('*', (req, res, next) => {
   next(createError(404, `can't find ${req.originalUrl} on server!`));
