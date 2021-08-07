@@ -9,7 +9,7 @@ exports.createTransaction = async (req, res, next) => {
   try {
     //fetch Transactions from req body
     const {
-      fullName,
+      senderName,
       email,
 phoneNumber,
       transactionTitle,
@@ -25,7 +25,7 @@ receiverAccountNumber,
     } = req.body;
     //create Transaction and store to database
     const transaction = await Transaction.create({
-         fullName,
+         senderName,
       email,
 phoneNumber,
       transactionTitle,
