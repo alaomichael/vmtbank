@@ -2,9 +2,9 @@
   "name": "vmt_bank_server",
   "version": "1.0.0",
   "description": "A VMT Bank server project",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
