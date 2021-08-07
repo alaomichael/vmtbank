@@ -20,7 +20,7 @@
     "jsonwebtoken": "8.5.1",
     "mongoose": "5.13.5",
     "morgan": "1.10.0",
-    "mutter": "1.0.1",
+    "multer": "1.0.1",
     "react": "17.0.2",
     "react-helmet": "6.1.0",
     "validator": "13.6.0",
