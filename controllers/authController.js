@@ -44,6 +44,7 @@ exports.signup = async (req, res, next) => {
    about,
       profileImageUrl,
       category,
+      services,
       role,
     } = req.body;
 
@@ -61,6 +62,7 @@ exports.signup = async (req, res, next) => {
    about,
       profileImageUrl,
       category,
+      services,
       role,
     });
     //create jwt token and send to user client

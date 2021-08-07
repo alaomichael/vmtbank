@@ -14,7 +14,8 @@ dotenv.config({ path: '.env' });
 const app = require('./app');
 
 //repalce string "password" on mongo atlas database url with mongo atlas password
-const DB = process.env.LOCALDB || process.env.DATABASE_URL.replace(
+// process.env.LOCALDB || 
+const DB = process.env.DATABASE_URL.replace(
   '<password>',
   process.env.DATABASE_PASSWORD
 ); 

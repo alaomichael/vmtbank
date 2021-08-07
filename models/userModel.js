@@ -55,7 +55,23 @@ const userSchema = new mongoose.Schema({
     },
     required: [true, 'please confirm your password'],
   },
+   city: {
+    type: String,
+    trim: true,
+      },
 
+      state: {
+    type: String,
+    trim: true,
+    },
+      address: {
+    type: String,
+    trim: true,
+  },
+      about: {
+    type: String,
+    trim: true,    
+  },
  
       profileImageUrl: {
     type: String,
